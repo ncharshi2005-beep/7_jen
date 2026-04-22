@@ -1,0 +1,9 @@
+2. Create a New ItemClick on New Item on the Jenkins dashboard.Enter an item name (e.g., Calculator_Build_Job).Select Freestyle project and click OK.
+3. Configure Source Code Management (GitHub)In the Source Code Management section, select Git.
+Enter your GitHub Repository URL where your Calculator code is hosted.Specify the branch to build (e.g., */main or */master).
+4. Configure Build StepsScroll down to the Build Steps section and click Add build step.
+Select Execute Windows batch command (or "Execute shell" if on Linux).Enter the Maven commands to build your project:Code snippetmvn clean package
+5. Archive Artifacts (Post-build Actions)Click Add post-build action.Select Archive the artifacts.In the "Files to archive" field, enter the path to your JAR file:Plaintexttarget/*.jar
+6. Save and BuildClick Save and then Apply.Click Build Now on the left sidebar to start the job.
+
+echo target/ > .gitignore 
