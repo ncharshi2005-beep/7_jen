@@ -7,3 +7,9 @@ Select Execute Windows batch command (or "Execute shell" if on Linux).Enter the 
 6. Save and BuildClick Save and then Apply.Click Build Now on the left sidebar to start the job.
 
 echo target/ > .gitignore 
+
+
+
+
+Aim:
+To create and execute a basic Jenkins freestyle job by configuring build settings and running a simple build command in order to understand automated build execution in Jenkins.Theory:Jenkins: An open-source automation server used to implement Continuous Integration (CI) and Continuous Delivery (CD).Freestyle Project: The simplest job type in Jenkins, allowing users to configure build tasks through a graphical interface.Artifacts: Files generated during the build process (like a .jar file) that are archived for later use.
